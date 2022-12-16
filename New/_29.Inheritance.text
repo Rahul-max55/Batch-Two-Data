@@ -1,0 +1,184 @@
+Class Inheritance
+    To create a class inheritance, use the extends keyword.
+
+    A class created with a class inheritance inherits all the methods from another class:
+
+    Example
+        Create a class named "Model" which will inherit the methods from the "Car" class:
+
+        class car {
+            constructor(price, contry) {
+                this.myPrice = price;
+                this.myContry = contry;
+            }
+            biodata() {
+                return `Car price is ${this.myPrice} and origin in ${this.myContry}`;
+            }
+
+        }
+        let Honda = new car(23_00_000, "india");
+        let mastung = new car(19_00_000, "America");
+        // Honda.biodata();
+
+
+        class myCar extends car{
+            constructor(Price , contry){
+                super(Price , contry);
+                this.myContry = contry;
+            }
+            // When you can access the contry value you firstly store this value and use it (this.myContry = contry)
+        
+            details(det){
+                console.log(`My car length is : ${det} and ${super.biodata()} ${this.myContry} `);
+            }
+
+            // We also use to call the method this.biodata() or super.biodata()
+
+        }
+       // when you create a child class using a parent class you should pass values in child class
+        let ourCar = new myCar(25 , "gg");
+
+        ourCar.details("12ft");
+
+
+
+// Getter and Setter - 
+
+
+In this article we are going to discuss about the getters and setters in JavaScript classes with suitable examples in JavaScript.
+
+In JavaScript, getters and setters are the methods that are used to get or set the value for properties. When using getters and setters, you can ensure higher data quality. Getters and Setters provide a simplified syntax for an object's properties and methods. Getters and Setters are used for Data Encapsulation. To add getters and setters in the class, use the get and set keywords.
+
+To get a better understanding let’s look into the syntax and usage of both getters and setters method in JavaScript.
+
+Using Getters method
+Getter is a method that is used to retrieve a value of a property. The syntax for the getter method is −
+
+get methodName(){…}
+The return type for this method is a value which can be any primitive data type.
+
+Example 1
+This is an example program defining the usage of getter method in JavaScript.
+
+<html>
+<head>
+   <title>Getters in JavaScript</title>
+</head>
+<body style="text-align: center;">
+   <p>Getters in JavaScript</p>
+   <p id="result"></p>
+   <script>
+      const student = {
+         student1 : ['Ram', 'Computer Science', 022],
+         get details() {
+            return this.student1[0]+' has registered for the course '+this.student1[1]+' with the roll no. '+this.student1[this.student1.length-1];
+         }
+      }
+      document.getElementById("result").innerHTML = student.details;
+   </script>
+</body>
+</html>
+On executing the above code, the below output is generated.
+
+Example 2
+This is an example program defining use of getter method and deleting a particular getter method.
+
+<html>
+<head>
+   <title>Getters in JavaScript</title>
+</head>
+<body style="text-align: center;">
+   <p>Getters in JavaScript</p>
+   <p id="result"></p>
+   <p id="result2"></p>
+   <script>
+      class Maths {
+         static get PIvalue() {
+            return 3.14;
+         }
+      }
+      Maths.PIvalue = 3.14159265; // Cannot update static method values
+      document.getElementById("result").innerHTML = Maths.PIvalue;
+      delete Maths.PIvalue; // Deleting a getter method object.
+      document.getElementById("result2").innerHTML = Maths.PIvalue;
+   </script>
+</body>
+</html>
+On executing the above code, the below output is generated.
+
+Using Setters method
+Setter is a method that is used to set the value for a property. The syntax to represent a setter method is −
+
+set MethodName(value){…}
+Tha parameter value can be of any primitive data type.
+
+Example 1
+This is an example program defining the use of setter methods in JavaScript.
+
+<html>
+<head>
+   <title>Setters in JavaScript</title>
+</head>
+<body style="text-align: center;">
+   <p>Setters in JavaScript</p>
+   <p id="text1"></p>
+   <script type="text/javascript">
+      var Employee = {
+         Name: "Rahul",
+         desg : 'Software Engineer',
+         Company : "Google",
+         set setName(Name) {
+            this.Name = Name;
+         },
+         set setDesignation(desg) {
+            this.Designation = desg;
+         },
+         get getname() {
+            return this.Name;
+         },
+         get getDesignation() {
+            return this.desg;
+         }
+      };
+      Employee.setName = 'Mohan';
+      Employee.setDesignation = 'Web Developer';
+      document.getElementById("text1").innerHTML ='The Employee details are as follows : ' + '<br/>' +'Employee Name : ' + Employee.getname + '<br/>' + 'Designation : ' + Employee.getDesignation; + '<br/>';
+   </script>
+</body>
+</html>
+
+On executing the above code, the below output is generated.
+
+Example 2
+This is an example program for the usage of setter method and to delete a particular setter method.
+
+<html>
+<head>
+   <title>Setters in JavaScript</title>
+</head>
+<body style="text-align: center;">
+   <p>Setters in JavaScript</p>
+   <p>Deleting a setter method</p>
+   <p id="text1"></p>
+   <script type="text/javascript">
+      var Employee = {
+         set setName(Name) {
+            this.Name = Name;
+         },
+         set setDesignation(desg) {
+            this.Designation = desg;
+         },
+         get getname() {
+            return this.Name;
+         },
+         get getDesignation() {
+            return this.desg;
+         }
+      };
+      Employee.setName = 'Mohan';
+      Employee.setDesignation = 'Web Developer';
+      delete Employee.setDesignation; //Deleting a setter method.
+      document.getElementById("text1").innerHTML ='The Employee details are as follows : ' + '<br/>' +'Employee Name : ' + Employee.getname + '<br/>' + 'Designation : ' + Employee.getDesignation; + '<br/>';
+   </script>
+</body>
+</html>
