@@ -49,19 +49,19 @@
 
 // Await
 
-let data = async () => {
-    try {
-        console.log("2 : massage");
-        await console.log("3 : massage");
-        console.log("4 : massage");
-        console.log("5 : massage");
-    } catch (e) {
-        console.log(e);
-    }
-}
+// let data = async () => {
+//     try {
+//         console.log("2 : massage");
+//         await console.log("3 : massage");
+//         console.log("4 : massage");
+//         console.log("5 : massage");
+//     } catch (e) {
+//         console.log(e);
+//     }
+// }
 
-console.log("1 : massage");
-data();
+// console.log("1 : massage");
+// data();
 
-console.log("6 : massage");
+// console.log("6 : massage");
 
