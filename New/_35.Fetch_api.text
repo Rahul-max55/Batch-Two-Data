@@ -1,8 +1,4 @@
      
-     
-     *********Incompleted*********
- 
- 
  Fetch API
     The Fetch API interface allows web browser to make HTTP requests to web servers.
     😀 No need for XMLHttpRequest anymore.
@@ -63,11 +59,6 @@
     2.If inside the body code is other formate we use the noation -
              'Content-type': 'application/x-www-form-urlencoded';, 
 
-
-when we enter the form data using fetch api - (Write code)
-ex -  
-
-     *********Incompleted*********
             
 
 
