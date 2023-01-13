@@ -5,7 +5,7 @@ This method takes three parameter
 2.function is to be executed.
 3.useCapture - this takes true or flase discuss in below.
 
->basic method -  document.getElementById("heading").onclick = sum;
+>basic method - document.getElementById("heading").onclick = sum;
                 Note - do not use paranthesis in sum
 
 >Using Events - 

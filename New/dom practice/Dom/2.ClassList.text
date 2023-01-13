@@ -16,5 +16,5 @@ classList methods -
 
  6.contains() -This is returns true if class exists and false when not exists.
                let x = document.querySelector(".paragraph").classList.contains(1)            
-               console.log(x); 
+               console.log(x);
    

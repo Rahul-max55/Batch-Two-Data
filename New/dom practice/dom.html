@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            width: 80vw;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(248, 193, 193);
+        }
+
+
+        .btn {
+            width: 120px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border: 2px solid silver;
+        }
+
+        .red {
+            background-color: red;
+            border: 2px solid black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .blue {
+            background-color: blue;
+            border: 2px solid green;
+            color: white;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <p class="red a b">
+            I am a heading
+        </p>
+
+        <!-- <button class="btn" onclick="handleClick()">change</button> -->
+        <button class="btn">change</button>
+
+    </div>
+    <script>
+
+
+        const handleClick = () => {
+            // style---------
+            // let select = document.getElementsByClassName("red")[0];
+            // let select = document.querySelector(".red");
+            // select.style.border = "10px solid white";
+
+            // className
+            // let select = document.querySelector(".red");
+            // select.className = "blue";
+
+            // classList
+            // let select = document.querySelector(".red");
+            // select.classList.add("xyz");
+            // select.classList.remove("red");
+            // let x= select.classList.length;
+            // select.classList.toggle("hide");
+            // let x = select.classList.item(0);
+            // let x = select.classList.contains("red");
+            // console.log(x);
+        }
+
+
+
+        // AddEventListnear
+
+        document.querySelector(".btn").addEventListener("click", () => {
+            let select = document.querySelector(".red");
+            select.style.fontSize = "25px"
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
