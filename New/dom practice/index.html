@@ -7,18 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <style>
+        .container{
+            background-color: red;
+            width: 100vw;
+        }
+    </style>
+
 </head>
 
 <body>
 
     <div class="container">
         <h1 class="select" id="unique">DOM Preactice</h1>
-        <p id="para" class="red green">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti voluptatum atque fugiat, harum
+        <p id="para" class="red green">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti voluptatum
+            atque fugiat, harum
             minima non placeat fuga numquam veritatis, mollitia, laboriosam eum quia.</p>
 
         <h3 class="select">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deserunt non saepe
             dolorum possimus explicabo perspiciatis optio, tempora adipisci voluptates voluptatem nam aperiam!</h3>
-           </div>
+    </div>
+
+    <!-- inner -->
+
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed facere autem veritatis?</div>
+
+
+    <button id="btn">Copy</button>
+    <button id="btn">Copy</button>
 
     <script>
 
@@ -59,8 +75,87 @@
         // console.log(x);
 
         // let x = document.querySelector(".select");
-        let x = document.querySelectorAll("p")[0];
-        console.log(x);
+        // let x = document.querySelectorAll("p")[0];
+        // console.log(x);
+
+
+        // create Tag
+        // let createPara = document.createElement("p");
+        // console.log(createPara);
+
+        // let createContent = document.createTextNode("i am a new Content")
+        // console.log(createContent);
+
+        //     let createComment = document.createComment("i am new Commment")
+        //     console.log(createComment);
+
+        //    createPara.appendChild(createContent);
+        //    console.log(createPara);
+
+        //    replace child
+
+        // let parent = document.querySelector(".container")
+        // let oldElem = document.getElementById("unique")
+
+        // parent.replaceChild(createPara , oldElem );
+        // parent.removeChild(oldElem);
+
+        // document.getElementById("btn").addEventListener("click", () => {
+        //     let parent = document.querySelector(".container")
+        //     let createContent = document.createTextNode("i am a new Content")
+        //     let x = parent.cloneNode(false);
+        //     x.appendChild(createContent);
+        //     console.log(x);
+
+        //     document.body.appendChild(x);
+
+        // })
+
+
+    // insert before
+
+    // let newPara = document.createElement("p");
+    // let newCon = document.createTextNode("i am a content")
+    // newPara.appendChild(newCon)
+    // console.log(newPara);
+
+    // let target = document.querySelector(".container");
+    // let oldPara = document.querySelector("#para");
+    // target.insertBefore(newPara , oldPara );
+
+
+    // insertAdjecentHTML
+
+    // let target  = document.querySelector(".container");
+
+    // target.insertAdjacentHTML("beforeend" , "<h1>i am a heading </h1>");
+
+
+    // hasAttribute
+
+    // let para = document.querySelectorAll("#para")[0];
+
+    // let x = para.hasAttribute("class")
+    // console.log(x);
+
+    // let btn1 = document.querySelectorAll("#btn")[0];
+    // let btn2 = document.querySelectorAll("#btn")[1];
+    // let x = btn.hasChildNodes("class");
+    // console.log(x);
+
+    // let x = btn1.isEqualNode(btn2)
+    // console.log(x);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

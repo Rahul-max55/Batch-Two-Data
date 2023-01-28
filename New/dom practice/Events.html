@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="handleKey()" onunload="unload()">
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequuntur dolor quaerat qui,
+        sunt commodi, est doloremque aspernatur iure fugit maxime odio. Vero!</p>
+
+    <!-- <button onmouseup="handleClick()" onclick="handle()" >click</button> -->
+
+
+    <script>
+
+        // const handleKey = (e) => {
+        //     e.key === "Enter" ?
+        //         document.getElementById("para").style.backgroundColor = "red" : " "
+        // }
+
+        const handleKey = () => {
+      
+                document.getElementById("para").style.backgroundColor = "red"
+                console.log("load");
+        }
+        const unload = () => {
+                document.getElementById("para").style.color = "red"
+                console.log("unload");
+        }
+
+        // const handleClick = () => {
+        //     document.getElementById("para").style.backgroundColor = "red";
+        // }
+        // const handle = () => {
+        //     document.getElementById("para").style.backgroundColor = "blue";
+        // }
+
+    </script>
+
+</body>
+
+</html>

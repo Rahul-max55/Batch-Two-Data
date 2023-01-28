@@ -18,7 +18,7 @@ When we try to access the value of parent , child and siblings we use methods
     // This two methods is diff because the parentElement method returns null if 
     parent is not present but parentNode method is returns anything not returns null
 
-3.children - This method returns the child inside the parent element 
+3.children - This method returns the direct child inside the parent element 
               and put into  array but not returns child text.
         Ex -  document.querySelector('.li_prent').children;
 

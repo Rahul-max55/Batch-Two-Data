@@ -3,7 +3,7 @@
 1.click (onclick)
 2.Double Click (ondblclick)
 3.Right Click(oncontextmenu)
-4.mouse hover(onmouseenter)
+4.mouse hover(onmouseenter , onmouseover)
 5.mouse out(onmouseout)
 6.mouse Down(onmousedown) - its is a same as click
 7.mouse Up(onmouseup)    - function runs when mouse click is relese.

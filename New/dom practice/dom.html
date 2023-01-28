@@ -46,53 +46,138 @@
         .hide {
             display: none;
         }
+
+        .outer {
+            width: 70vw;
+            height: 50vh;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner {
+            width: 30vw;
+            height: 20vh;
+            background-color: blue;
+
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
 
-        <p class="red a b">
-            I am a heading
-        </p>
+    <!-- <p class="red a b"> -->
+    <!-- I am a heading -->
+    <!-- </p> -->
 
-        <!-- <button class="btn" onclick="handleClick()">change</button> -->
-        <button class="btn">change</button>
+    <!-- <button class="btn" onclick="handleClick()">change</button> -->
+    <!-- <button class="btn">change</button> -->
 
+    <!-- </div> -->
+
+    <div class="outer">
+        OUTER
+        <div class="inner">
+            <h4></h4>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <h1></h1>
+        </div>
     </div>
+
     <script>
 
 
-        const handleClick = () => {
-            // style---------
-            // let select = document.getElementsByClassName("red")[0];
-            // let select = document.querySelector(".red");
-            // select.style.border = "10px solid white";
+        // const handleClick = () => {
+        // style---------
+        // let select = document.getElementsByClassName("red")[0];
+        // let select = document.querySelector(".red");
+        // select.style.border = "10px solid white";
 
-            // className
-            // let select = document.querySelector(".red");
-            // select.className = "blue";
+        // className
+        // let select = document.querySelector(".red");
+        // select.className = "blue";
 
-            // classList
-            // let select = document.querySelector(".red");
-            // select.classList.add("xyz");
-            // select.classList.remove("red");
-            // let x= select.classList.length;
-            // select.classList.toggle("hide");
-            // let x = select.classList.item(0);
-            // let x = select.classList.contains("red");
-            // console.log(x);
-        }
+        // classList
+        // let select = document.querySelector(".red");
+        // select.classList.add("xyz");
+        // select.classList.remove("red");
+        // let x= select.classList.length;
+        // select.classList.toggle("hide");
+        // let x = select.classList.item(0);
+        // let x = select.classList.contains("red");
+        // console.log(x);
+        // }
 
 
 
         // AddEventListnear
 
-        document.querySelector(".btn").addEventListener("click", () => {
-            let select = document.querySelector(".red");
-            select.style.fontSize = "25px"
-        })
+        // document.querySelector(".btn").addEventListener("click", () => {
+        //     let select = document.querySelector(".red");
+        //     select.style.fontSize = "25px"
+        // })
+        // let para = document.querySelector(".red");
+        // let select = document.querySelector(".btn");
+        // select.addEventListener("mouseover", function(){
+        // this.style.backgroundColor = "aqua";
+        // para.style.backgroundColor = "aqua";
+        // })
+
+
+
+        // document.querySelector(".outer").addEventListener("click" , function(){alert("Outer Div")} , false);
+        // document.querySelector(".inner").addEventListener("click" , function(){alert("Inner Div")} , false);
+
+        // function abc() { this.style.border = "10px solid black" }
+
+        // document.querySelector(".outer").addEventListener("mouseout", abc);
+        // document.querySelector(".outer").addEventListener("click", function () {
+        //     this.removeEventListener("mouseout", abc)
+        // });
+
+        let x = document.querySelector("html").parentElement;
+        let y = document.querySelector("html").parentNode;
+        // console.log(x);
+        // console.log(y);
+
+
+        // let z = document.querySelector(".inner").children;
+        // let node = document.querySelector(".inner").childNodes;
+        // console.log(node);
+        // let first = document.querySelector(".inner").lastChild;
+        // let last = document.querySelector(".inner").firstChild;
+        // console.log(first);
+
+        // let elem = document.querySelector(".inner").firstElementChild;
+        // let elem = document.querySelector(".inner").lastElementChild;
+        // console.log(elem);
+
+
+        // let elem = document.querySelector("ul").previousSibling;
+        // let elem = document.querySelector("ul").nextSibling;
+        // console.log(elem);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

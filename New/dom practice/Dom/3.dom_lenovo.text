@@ -41,8 +41,8 @@ This method takes three parameter
         } , false)   
 
         // we using third parameter and this parameter deafult false.
-        when we create a two divs parent and child and when we click on child parent also clicked but we can change the order of execution using true false 
-        when we change value false to true outer div is executed first and then inner div is executed.
+        when we create a two divs parent and child and when we click on child, parent also clicked but we can change the order of execution using true false 
+        when we change value false to true outer div is executed first and then inner div is executed secound.
 
 
 > We can remove eventlistner using removeEventListener -
@@ -52,7 +52,6 @@ This method takes three parameter
         function abc () {
                 alert('outer Div')
             } 
-
         document.querySelector('.outer').addEventListener("click" , function(){
               document.querySelector('.outer').removeEventListener("mouseleave" , abc)
         })
